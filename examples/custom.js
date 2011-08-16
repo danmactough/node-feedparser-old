@@ -1,16 +1,16 @@
 /*!
- * node-easyrss
- * Copyright(c) 2011 Nicholas Penree <drudge@conceited.net>
+ * node-feedparser
+ * Copyright(c) 2011 Dan MacTough <danmactough@gmail.com>
  * MIT Licensed
  */
 
-var rss = require(__dirname +'/../lib/easyrss')
+var rss = require(__dirname +'/../lib/feedparser')
   , inspect = require('util').inspect
 
-rss.parseURL('http://conceited.net/blog/feed', {
+rss.parseURL('http://scripting.com/rss.xml', {
   // there are custom properties we can define for each item in the rss feed 
   type: 'post',
-  source: 'conceited.blog', 
+  source: 'Scripting News',
 
   // callback with all the items parsed
   cb: function(posts) {
@@ -25,4 +25,3 @@ rss.parseURL('http://conceited.net/blog/feed', {
     console.log(inspect(articles));
   }
 });
-

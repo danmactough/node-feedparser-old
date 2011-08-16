@@ -1,12 +1,12 @@
 /*!
- * node-easyrss
- * Copyright(c) 2011 Nicholas Penree <drudge@conceited.net>
+ * node-feedparser
+ * Copyright(c) 2011 Dan MacTough <danmactough@gmail.com>
  * MIT Licensed
  */
 
-var rss = require(__dirname +'/../lib/easyrss')
+var rss = require(__dirname +'/../lib/feedparser')
   , inspect = require('util').inspect
 
-rss.parseURL('http://conceited.net/blog/feed', function(posts){
+rss.parseURL('http://scripting.com/rss.xml', function(posts){
   console.log(inspect(posts));
 });
