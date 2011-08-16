@@ -1,10 +1,10 @@
-#  EasyRSS - Simple RSS feed parsing in Node.js 
+#  Feedparser - Robust RSS, Atom, and RDF feed parsing in Node.js 
       
-  This module adds methods for simple RSS feed parsing in node.js using libxmljs.
+This module adds methods for RSS, Atom, and RDF feed parsing in node.js using libxmljs.
 
 ## Requirements
 
-EasyRSS makes use of libxmljs to parse RSS/Atom feeds. libxmljs requires `scons` to be installed prior to installing through [npm](http://npmjs.org).
+Feedparser uses libxmljs to parse XML. libxmljs requires `scons` to be installed prior to installing through [npm](http://npmjs.org).
 
 ### Installing `scons` through Homebrew
 
@@ -13,31 +13,36 @@ On Mac OS X, the easiest way to install `scons` is using [Homebrew](http://mxcl.
     brew install scons
 
 
-### Installing `scons` through APT
+### Installing `scons` through APT/yum
 
 On Debian based Linux distributions like Ubuntu, simply install using `apt-get` like this:
 
     sudo apt-get install scons
 
+On RedHat based Linux distributions like Fedora or CentOS, simply install using `yum` like this:
+
+    sudo yum install scons
+
 ## Installation
 
-    npm install easyrss
+    npm install feedparser
 
 ## Example
 
 ```javascript
-var rss = require('easyrss')
+var rss = require('feedparser')
   , inspect = require('util').inspect
 
-rss.parseURL('http://conceited.net/blog/feed', function(posts){
+rss.parseURL('http://scripting.com/rss.xml', function(posts){
   console.log(inspect(posts));
 });
 ```
 
 ## Contributors
 
-The following are the major contributors of `node-easyrss` (in no specific order).
+The following are the major contributors of `node-feedparser` (in no specific order).
 
+  * Dan MacTough ([danmactough](http://github.com/danmactough))
   * Nicholas Penree ([drudge](http://github.com/drudge))
   * Rob Searles ([ibrow](http://github.com/ibrow))
   * Jeremy Knope ([jfro](http://github.com/jfro))
@@ -48,7 +53,7 @@ The following are the major contributors of `node-easyrss` (in no specific order
 
 (The MIT License)
 
-Copyright (c) 2011 Nicholas Penree &lt;drudge@conceited.net&gt;
+Copyright (c) 2011 Dan MacTough &lt;danmactough@gmail.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
