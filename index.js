@@ -1,7 +1,7 @@
 /*!
- * node-easyrss
- * Copyright(c) 2011 Nicholas Penree <drudge@conceited.net>
+ * node-feedparser
+ * Copyright(c) 2011 Dan MacTough <danmactough@gmail.com>
  * MIT Licensed
  */
 
-module.exports = require(__dirname + '/lib/easyrss');
+module.exports = require(__dirname + '/lib/feedparser');
