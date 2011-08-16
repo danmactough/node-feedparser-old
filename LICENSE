@@ -1,4 +1,7 @@
 ----------------------------------------------------------------------
+node-feedparser is released under the MIT License
+Copyright (c) 2011 Dan MacTough - http://yabfog.com
+
 node-easyrss is released under the MIT License
 Copyright (c) 2011 Nicholas Penree - http://www.penree.com
 
@@ -25,8 +28,3 @@ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
-
-----------------------------------------------------------------------
-node-xml, which node-rss makes heavy usage is also released under the
-MIT License - see http://github.com/robrighter/node-xml for more info
-----------------------------------------------------------------------
