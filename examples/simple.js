@@ -4,9 +4,13 @@
  * MIT Licensed
  */
 
-var rss = require(__dirname +'/../lib/feedparser')
-  , inspect = require('util').inspect
+var FeedParser = require('./feedparser')
+  , parser
 
-rss.parseURL('http://scripting.com/rss.xml', function(posts){
-  console.log(inspect(posts));
+parser = new FeedParser();
+
+parser.on('article', function(article){
+    console.log('Got article: %s', JSON.stringify(article));
 });
+
+parser.parseFile('./feed');

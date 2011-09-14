@@ -31,7 +31,6 @@ On RedHat based Linux distributions like Fedora or CentOS, simply install using 
 
 ```javascript
 var FeedParser = require('feedparser')
-  , fs = require('fs')
   , parser
 
 parser = new FeedParser();
