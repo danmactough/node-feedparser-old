@@ -30,12 +30,17 @@ On RedHat based Linux distributions like Fedora or CentOS, simply install using 
 ## Example
 
 ```javascript
-var rss = require('feedparser')
-  , inspect = require('util').inspect
+var FeedParser = require('feedparser')
+  , fs = require('fs')
+  , parser
 
-rss.parseURL('http://scripting.com/rss.xml', function(posts){
-  console.log(inspect(posts));
+parser = new FeedParser();
+
+parser.on('article', function(article){
+    console.log('Got article: %s', JSON.stringify(article));
 });
+
+parser.parseFile('./feed');
 ```
 
 ## Contributors
@@ -43,11 +48,14 @@ rss.parseURL('http://scripting.com/rss.xml', function(posts){
 The following are the major contributors of `node-feedparser` (in no specific order).
 
   * Dan MacTough ([danmactough](http://github.com/danmactough))
+
+Although `node-feedparser` no longer shares any code with `node-easyrss`, it was an inspiration. 
+The following are the major contributors of `node-easyrss` (in no specific order).
+
   * Nicholas Penree ([drudge](http://github.com/drudge))
   * Rob Searles ([ibrow](http://github.com/ibrow))
   * Jeremy Knope ([jfro](http://github.com/jfro))
   * Hannah Fouasnon ([fouasnon](http://github.com/fouasnon))
-
 
 ## License 
 
