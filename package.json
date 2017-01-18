@@ -13,7 +13,7 @@
     "node": ">= 0.4.0"
   },
   "dependencies": {
-    "libxmljs": "*"
+    "libxmljs": ">=0.18.4"
   },
   "devDependencies": {}
 }
