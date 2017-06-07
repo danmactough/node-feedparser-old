@@ -1,4 +1,6 @@
 #  Feedparser - Robust RSS, Atom, and RDF feed parsing in Node.js 
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/danmactough/node-feedparser-old.svg)](https://greenkeeper.io/)
       
 This module adds methods for RSS, Atom, and RDF feed parsing in node.js using libxmljs.
 
